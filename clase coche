@@ -1,0 +1,11 @@
+
+class coche:
+    def __init__(self, marca, modelo, año):
+     
+        self.marca = marca
+        self.modelo = modelo
+        self.año = año
+
+    def antiguedad(self):
+      
+        return date.today().year - self.año
