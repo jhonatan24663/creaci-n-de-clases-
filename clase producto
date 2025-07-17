@@ -1,0 +1,14 @@
+class producto:
+    def __init__(self, nombre, precio, stock,):
+        self.nombre = nombre
+        self.precio = precio
+        self.stock = stock 
+    
+    def aumentar_stock(self, cantidad):
+        self.stock += cantidad 
+    
+    def desminuir_stock(self, cantidad):
+        if cantidad <= self.stock:
+            self.stock -= cantidad 
+        else: 
+            print:("no hay el suficiente stock")
